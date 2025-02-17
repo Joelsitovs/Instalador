@@ -21,7 +21,7 @@ echo -e "${GREEN}✅ Sistema actualizado.${RESET}"
 
 # Obtener el home del usuario que ejecuta el script con sudo
 user_home=$(eval echo ~$SUDO_USER)
-repo_dir="$user_home/Instalador"
+repo_dir="$user_home/instalador-servidor-web"
 
 # Verificar si Python3 está instalado
 if ! command -v python3 &> /dev/null; then
