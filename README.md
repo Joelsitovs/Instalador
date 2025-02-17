@@ -59,7 +59,7 @@ El script tiene un menú interactivo donde puedes seleccionar qué deseas hacer:
 ## 🚀 **Desinstalación**
 Si necesitas desinstalar los servicios instalados:
 ```bash
-sudo python3 desinstalador.py
+sudo python3 desisv3.py
 ```
 
 > Esto eliminará **Nginx, PHP, MariaDB y phpMyAdmin** del sistema, además de limpiar archivos de configuración.
