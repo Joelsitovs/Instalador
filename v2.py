@@ -200,7 +200,7 @@ def configuracion():
             subprocess.run(comando, shell=True, check=True)
             print(f"{bcolors.OKGREEN}✅ Contraseña cambiada correctamente.{bcolors.ENDC}")
             time.sleep(2)
-            subprocess.run(["sudo", "service", "php8.2-fpm", "restart"], check=True)
+            subprocess.run(["sudo", "service", "php8.3-fpm", "restart"], check=True)
             print(f"{bcolors.OKGREEN}✅ Configuración de MariaDB completada.{bcolors.ENDC}")
             
         except subprocess.CalledProcessError:

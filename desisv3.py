@@ -182,7 +182,7 @@ def desinstalar_php():
         print(f"{bcolors.OKGREEN} Paquetes de PHP desinstalados correctamente.{bcolors.ENDC}")
         try:
             subprocess.run(
-                "sudo apt remove --purge -y php php-cli php8.2-fpm php-mysql php-xml php-curl php-mbstring php-zip",
+                "sudo apt remove --purge -y php php-cli php8.3-fpm php-mysql php-xml php-curl php-mbstring php-zip",
                 shell=True, check=True
             )
             print(f"{bcolors.OKGREEN} Paquetes de PHP desinstalados correctamente.{bcolors.ENDC}")

@@ -59,7 +59,7 @@ server {
         location ~ ^/phpmyadmin/(.+\.php)$ {
             try_files $uri =404;
             root /usr/share/;
-            fastcgi_pass unix:/run/php/php8.2-fpm.sock; # Asegura que usas la versión correcta de PHP
+            fastcgi_pass unix:/run/php/php8.3-fpm.sock; # Asegura que usas la versión correcta de PHP
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             include /etc/nginx/fastcgi_params;
@@ -74,7 +74,7 @@ server {
 	 # Configuración para ejecutar PHP correctamente
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.2-fpm.sock; # Asegura que usas la versión correcta de PHP
+        fastcgi_pass unix:/run/php/php8.3-fpm.sock; # Asegura que usas la versión correcta de PHP
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
